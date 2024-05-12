@@ -4,11 +4,11 @@ description: >-
   Windows but if you have some basic knowledge of linux you can probably do it.
 ---
 
-# Linux : Installing your server
+# Linux: Installing your server
 
 <figure><img src="../../.gitbook/assets/linux.png" alt=""><figcaption></figcaption></figure>
 
-RDS can run on both GUI based and CLI based distros. It will work also on distros that aren't Debian based, though the steps will need to be altered:
+RDS can run on both GUI based (with a  desktop user interface ) and CLI based (with only  a command line to work with ) distros. It will work also on distros that aren't Debian based, though the steps will need to be altered:
 
 {% content-ref url="linux-installing-your-server.md" %}
 [linux-installing-your-server.md](linux-installing-your-server.md)

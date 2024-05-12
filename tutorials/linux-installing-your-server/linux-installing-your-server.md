@@ -4,15 +4,17 @@ description: >-
   Windows but if you have some basic knowledge of linux you can probably do it.
 ---
 
-# Debian based GUI Distro : Installing your server
+# GUI based distro: Installing your server
 
 <figure><img src="../../.gitbook/assets/linux.png" alt=""><figcaption></figcaption></figure>
 
 RDS is really easy to install as it is a single application named **RaftDedicatedServer.exe** that you can download on our master website available [here](https://master.raftmodding.com/).
 
 {% hint style="warning" %}
-This tutorial has been written for Ubuntu 22.04 LTS.\
+This tutorial has been written for Ubuntu 22.04 LTS. \
 It should work on other debian based linux distributions. When it comes to other distro families like Redhat, Arch, ... you will need to adapt the commands.
+
+This guide is for distros that have a user interface. If your distro does only provide a command line [check the other guide.](linux-installing-your-server-1.md)&#x20;
 {% endhint %}
 
 ### How to install ?

@@ -5,10 +5,10 @@
 
 ## Tutorials
 
-* [Windows : Installing your server](tutorials/windows-installing-your-server.md)
-* [Linux : Installing your server](tutorials/linux-installing-your-server/README.md)
-  * [Debian based GUI Distro : Installing your server](tutorials/linux-installing-your-server/linux-installing-your-server.md)
-  * [Debian based CLI Distro : Installing your server](tutorials/linux-installing-your-server/linux-installing-your-server-1.md)
+* [Windows: Installing your server](tutorials/windows-installing-your-server.md)
+* [Linux: Installing your server](tutorials/linux-installing-your-server/README.md)
+  * [GUI based distro: Installing your server](tutorials/linux-installing-your-server/linux-installing-your-server.md)
+  * [CLI based Distro: Installing your server](tutorials/linux-installing-your-server/linux-installing-your-server-1.md)
 * [Configuring your server](tutorials/configuring-your-server.md)
 * [Managing Player Permissions](tutorials/managing-player-permissions.md)
 * [How to create a plugin project](tutorials/how-to-create-a-plugin-project/README.md)
