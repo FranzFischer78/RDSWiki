@@ -4,7 +4,7 @@ description: >-
   Windows but if you have some basic knowledge of linux you can probably do it.
 ---
 
-# Debian based CLI Distro : Installing your server
+# CLI based Distro: Installing your server
 
 <figure><img src="../../.gitbook/assets/linux.png" alt=""><figcaption></figcaption></figure>
 
@@ -13,6 +13,8 @@ RDS is really easy to install as it is a single application named **RaftDedicate
 {% hint style="warning" %}
 This tutorial has been written for Ubuntu Server 22.04 LTS.\
 It should work on most other debian based linux distributions. When it comes to other distro families like Redhat, Arch, ... you will need to adapt the commands.
+
+This guide is for Distros that only have a command line interface. If your distro does provide a user interface you should [check the other guide](linux-installing-your-server.md).&#x20;
 {% endhint %}
 
 ### How to install ?
