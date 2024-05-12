@@ -12,7 +12,7 @@ RDS is really easy to install as it is a single application named **RaftDedicate
 
 {% hint style="warning" %}
 This tutorial has been written for Ubuntu Server 22.04 LTS.\
-It should work on other debian based linux distributions. When it comes to other distro's like Redhat, Arch, ... based ones you will need to adapt the commands.
+It should work on most other debian based linux distributions. When it comes to other distro families like Redhat, Arch, ... you will need to adapt the commands.
 {% endhint %}
 
 ### How to install ?
@@ -29,7 +29,8 @@ If you don't really know what you are doing, we recommend you to use our automat
 
 3\) CD into your RDS directory&#x20;
 
-4\) Download our bash script into your RDS directory.\
+4\) [Download our bash script](https://fastdl.raftmodding.com/installrdsscript.sh) into your RDS directory.\
+( `wget`[`https://fastdl.raftmodding.com/installrdsscript.sh`](https://fastdl.raftmodding.com/installrdsscript.sh) )\
 \
 5 ) Run the command `sudo chmod +rwx ./installrdsscript.sh`
 
@@ -72,12 +73,16 @@ Run `msiexec /i wine-mono-5.0.0-x86.msi` to install mono for wine.\
 6 ) Now to run your server go in your server folder with `cd yourserverfolder` and use the following command.\
 `sudo /usr/bin/xvfb-run -a -l env WINEDLLOVERRIDES="winhttp.dll=n,b" env WINEDEBUG="-all" wine64 RaftDedicatedServer.exe`\
 \
-7 ) Now that your server "should" be working, in order to let it run 24/7 when you close the terminal, you can use **tmux** with the commands below.\
-\
+7 ) Now that your server "should" be working, in order to let it run 24/7 when you close the terminal, you can use **tmux** with the commands below.
+
 Launching the server :\
-`screen -R RDS /usr/bin/xvfb-run -l -a env WINEDLLOVERRIDES="winhttp.dll=n,b" env WINEDEBUG="-all" wine64 RaftDedicatedServer.exe`\
+`sudo tmux new-session -d -s RDS 'sudo /usr/bin/xvfb-run -l -a env WINEDLLOVERRIDES="winhttp.dll=n,b" env WINEDEBUG="-all" wine64 RaftDedicatedServer.exe'`\
 \
-To get back in the server window after logging back in into your VPS, type `screen -r`\
-To leave your server window without killing it press `CTRL+A+D`
+Connect to the tmux session:\
+`sudo tmux attach-session -t RDS`\
+\
+To leave your tmux session without killing it press `CTRL+B` then `D`
+
+Heres  a useful cheatsheet if you need help with tmux: [https://tmuxcheatsheet.com/](https://tmuxcheatsheet.com/)
 {% endtab %}
 {% endtabs %}

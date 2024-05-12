@@ -12,7 +12,7 @@ RDS is really easy to install as it is a single application named **RaftDedicate
 
 {% hint style="warning" %}
 This tutorial has been written for Ubuntu 22.04 LTS.\
-It "should" work on other linux distributions but none of them have been tested yet.
+It should work on other debian based linux distributions. When it comes to other distro families like Redhat, Arch, ... you will need to adapt the commands.
 {% endhint %}
 
 ### How to install ?
