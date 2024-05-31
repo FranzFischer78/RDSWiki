@@ -25,9 +25,9 @@ If you don't really know what you are doing, we recommend you to use our automat
 
 {% tabs %}
 {% tab title="Automated Script" %}
-1 )  The patching part of RDS isn't working yet on linux, so you need to install it first on windows and then everything will work fine. So download RDS from [here](https://master.raftmodding.com/download) and follow the Windows guide to get it running on windows.
+1 ) Upload all the Raft game files onto your server.
 
-2\) Upload your entire server directory from your windows installation to a folder for RDS on your linux server.
+2\) Download RDS from [here](https://master.raftmodding.com/download) and put it into your server directory.
 
 3\) CD into your RDS directory&#x20;
 
@@ -68,9 +68,9 @@ Run `msiexec /i wine-mono-5.0.0-x86.msi` to install mono for wine.\
 \
 3 ) Create a folder for your server.\
 \
-4 ) Now, the patching part of RDS isn't working yet on linux, so you need to install it first on windows and then everything will work fine. So download RDS from [here](https://master.raftmodding.com/download) and follow the Windows guide to get it running on windows.\
+4 ) Upload all the Raft game files onto your server.\
 \
-5 ) Upload your entire server directory from your windows installation to your server folder on linux.\
+5 ) Download RDS from [here](https://master.raftmodding.com/download) and put it into your server directory.\
 \
 6 ) Now to run your server go in your server folder with `cd yourserverfolder` and use the following command.\
 `sudo /usr/bin/xvfb-run -a -l env WINEDLLOVERRIDES="winhttp.dll=n,b" env WINEDEBUG="-all" wine64 RaftDedicatedServer.exe`\
