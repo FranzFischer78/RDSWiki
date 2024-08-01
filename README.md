@@ -8,15 +8,16 @@ description: >-
 # Introducing Raft Dedicated Servers
 
 {% hint style="info" %}
-If you want to self-host your server you can do so by becoming a +5$ patron on our [patreon page](https://www.patreon.com/hytekgames), but keep in mind that self-hosting the software on linux can be challenging, However we've got guides to help you out :)
+Want to get your server running within minutes ? Rent a server from [BisectHosting](https://www.bisecthosting.com/raft?r=rdswiki) ! \
+With their optimized panel, you can manage online players, schedule tasks, easily install plugins, and more.
+
+[BisectHosting](https://www.bisecthosting.com/raft?r=rdswiki) offers the best experience for hosting your Raft dedicated server!
 {% endhint %}
 
 <figure><img src=".gitbook/assets/bisect_horizontal.jpg" alt=""><figcaption><p>Easily rent a server from <a href="https://www.bisecthosting.com/raft?r=rdswiki">BisectHosting</a> and get your raft world running within seconds with a one click installation !</p></figcaption></figure>
 
 {% hint style="info" %}
-Rent a server from [BisectHosting](https://www.bisecthosting.com/raft?r=rdswiki) to get your server running within minutes! With their optimized panel, you can manage online players, schedule tasks, easily install plugins, and more.
-
-[BisectHosting](https://www.bisecthosting.com/raft?r=rdswiki) offers the best experience for hosting your Raft dedicated server!
+If you want to self-host your server you can do so by becoming a +5$ patron on our [patreon page](https://www.patreon.com/hytekgames), but keep in mind that self-hosting the software on linux can be challenging, However we've got guides to help you out :)
 {% endhint %}
 
 RDS is an application that will manage your raft installation to run 24/7 with no interruptions.\
