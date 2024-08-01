@@ -7,10 +7,6 @@ description: >-
 
 # Introducing RTCP (Our custom networking layer)
 
-{% hint style="warning" %}
-RTCP is currently in Alpha and might have some bugs, however during our testing phase it was working perfectly fine and is way faster than steam networking.
-{% endhint %}
-
 As said above, RTCP relies on the **TCP/IP(\*)** protocol, this allows us to provide dedicated servers without using Steam Networking and without being limited on the bandwidth etc..\
 \
 As we are using a different networking layer than the original game, **vanilla users(\*)** won't be able to join dedicated servers that uses this networking layer.\
