@@ -14,8 +14,8 @@ The easiest way is to start CMD, navigate to your server folder and simply run t
 
 1 ) Simply enter your plugin name and press enter.\
 For the example i'm gonna use the name `MyAwesomePlugin`.\
-_<mark style="color:green;">Once you entered your plugin name it should looks like this.</mark>_![](../../.gitbook/assets/plugin.PNG)
+&#xNAN;_<mark style="color:green;">Once you entered your plugin name it should looks like this.</mark>_![](../../.gitbook/assets/plugin.PNG)
 
 2 ) Now that you entered your plugin name, the plugin creator is asking you if you want to change the project path, we highly recommend you to keep the default path and simply type `n` or `no` and press enter.\
 \
-And that's it ! Your plugin should be created  !\
+And that's it ! Your plugin should be created !\\
