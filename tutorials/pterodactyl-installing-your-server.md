@@ -18,7 +18,7 @@ This currently only works if you use the beta version of Raft and the indev vers
 
 ## Getting the egg
 
-1. First you need to download the egg from the github repository
+1. First you need to download the egg from the [github repository](https://github.com/FranzFischer78/RDS-Beta-Docker-Image/blob/main/egg-raft-dedicated-server--r-d-s.json)
 2. In your Pterodactyl admin panel go to Nests and create a new nest for Raft
 3. Now you can import the egg you just download to the newly created Raft nest.
 4. You can adjust the configuration of the egg in case you need to (this is only recommended for experienced users who want to fine tune the egg to their needs)
