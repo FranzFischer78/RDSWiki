@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introducing RDS](README.md)
+* [Introducing Raft Dedicated Servers](README.md)
   * [Introducing RTCP (Our custom networking layer)](introducing-rds/introducing-rtcp-our-custom-networking-layer.md)
 
 ## Tutorials

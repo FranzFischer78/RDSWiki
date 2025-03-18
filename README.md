@@ -1,13 +1,23 @@
 ---
 description: >-
-  RDS Stands for Raft Dedicated Server, it is a dedicated server project for the
-  game Raft ! It includes TCP Networking, Anticheat, Plugins & more !
+  We present RaftDedicatedServer (RDS) – Easily run your Raft world 24/7. Rent a
+  server from BisectHosting or self-hostable for our patrons above $5, RDS
+  offers an unparalleled experience.
 ---
 
-# Introducing RDS
+# Introducing Raft Dedicated Servers
 
-{% hint style="warning" %}
-RDS is currently in Alpha and only available for our patrons above 5$, If you want to host your own server until we get out of the alpha, visit [our patreon page](https://www.patreon.com/hytekgames) and get yourself a key by supporting us to download RDS.
+{% hint style="info" %}
+Want to get your server running within minutes ? Rent a server from [BisectHosting](https://www.bisecthosting.com/raft?r=rdswiki) ! \
+With their optimized panel, you can manage online players, schedule tasks, easily install plugins, and more.
+
+[BisectHosting](https://www.bisecthosting.com/raft?r=rdswiki) offers the best experience for hosting your Raft dedicated server!
+{% endhint %}
+
+<figure><img src=".gitbook/assets/bisect_horizontal.jpg" alt=""><figcaption><p>Easily rent a server from <a href="https://www.bisecthosting.com/raft?r=rdswiki">BisectHosting</a> and get your raft world running within seconds with a one click installation !</p></figcaption></figure>
+
+{% hint style="info" %}
+If you want to self-host your server you can do so by becoming a +5$ patron on our [patreon page](https://www.patreon.com/hytekgames), but keep in mind that self-hosting the software on linux can be challenging, However we've got guides to help you out :)
 {% endhint %}
 
 RDS is an application that will manage your raft installation to run 24/7 with no interruptions.\
@@ -20,7 +30,8 @@ RDS has 2 networking layers, RTCP and Steam.
 *   RTCP will use TCP/IP protocol and won't require a 2nd Raft copy.
 
     Note : When using RTCP, steam services are disabled to redirect all the traffic to your server, this means that **vanilla users(\*)** without our mod loader won't be able to join the server.
-* Steam will use Raft original networking and will require a 2nd Raft copy. (It is also quite glitchy since it requires Steam)
+* Steam will use Raft original networking and will require a 2nd Raft copy.\
+  _**If you rent a**_ [_**BisectHosting**_](https://www.bisecthosting.com/raft?r=rdswiki) _**server you can directly input your 2nd raft account on their panel and make your server available to vanilla users within minutes!**_
 
 As you may know, Raft is mostly **client authoritative(\*)** so we are hardly working on making it more secure by going towards a **server authoritative(\*)** solution but that will be in the far future since it is a lot of work to redo most of the raft networking.&#x20;
 
@@ -32,9 +43,3 @@ In order to currently fight against cheaters, we made a small Anticheat (Thanks 
 \* Client Authoritative : This means that almost nothing is verified by the server, like your inventory isn't verified by the server so the players can cheat as they like, same for the position etc.
 
 \* Server Authoritative : This means that most things will be verified OR managed by the server, for example your inventory will entirely be on the server and it will tell you what you have in it, so you have NO WAY of cheating, same for your position, the server will do the same moves as you and detect if there's some cheat going on.
-
-{% hint style="danger" %}
-Hosting a RDS server will require you to own a legal Raft copy on Steam.
-
-**RDS IS NOT SUPPORTING PIRATED/CRACKED VERSIONS.**
-{% endhint %}
