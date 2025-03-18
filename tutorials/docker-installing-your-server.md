@@ -26,7 +26,7 @@ This currently only works if you use the beta version of Raft and the indev vers
 Run the container using the following command:
 
 {% tabs %}
-{% tab title="Without Steam to update game files " %}
+{% tab title="Without Steam " %}
 `docker run -v /path/to/local/dir:/home/container -e STARTUP="updateboth" ghcr.io/franzfischer78/raftmodding-rds:latest`
 {% endtab %}
 
