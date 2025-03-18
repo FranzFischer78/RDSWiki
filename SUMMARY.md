@@ -10,6 +10,7 @@
   * [GUI based distro: Installing your server](tutorials/linux-installing-your-server/linux-installing-your-server.md)
   * [CLI based Distro: Installing your server](tutorials/linux-installing-your-server/linux-installing-your-server-1.md)
 * [Pterodactyl: Installing your Server](tutorials/pterodactyl-installing-your-server.md)
+* [Docker: Installing your Server](tutorials/docker-installing-your-server.md)
 * [Configuring your server](tutorials/configuring-your-server.md)
 * [Managing Player Permissions](tutorials/managing-player-permissions.md)
 * [How to create a plugin project](tutorials/how-to-create-a-plugin-project/README.md)
