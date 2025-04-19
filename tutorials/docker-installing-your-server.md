@@ -19,7 +19,7 @@ This currently only works if you use the beta version of Raft and the indev vers
 ## Creating the container:
 
 1. Pull the docker image using `docker pull ghcr.io/franzfischer78/raftmodding-rds:latest`
-2. There are multiple ways you can now work with Files inside of docker. We recommend that you mount a local directory into the Docker Container to make things easier. Prepare a local directory where you will put all your RDS related files into. The RaftDedicatedServer.exe is the only file you need to add as the Game will be downloaded through steamcmd if necessary.  If you do not wish to use the automatic download you can place the game files manually into that directory.&#x20;
+2. There are multiple ways you can now work with Files inside of docker. We recommend that you mount a local directory into the Docker Container to make things easier. Prepare a local directory where you will put all your RDS related files into. The RaftDedicatedServer.exe is the only file you need to add as the Game will be downloaded through steamcmd if necessary (this only works if you set the environment variables for steam in the run command).  If you do not wish to use the automatic download you can place the game files manually into that directory.&#x20;
 
 ## Running the container
 
@@ -30,8 +30,12 @@ Run the container using the following command:
 `docker run -v /path/to/local/dir:/home/container -e STARTUP="updateboth" ghcr.io/franzfischer78/raftmodding-rds:latest`
 {% endtab %}
 
-{% tab title="With steam to update game files" %}
-`docker run -v /path/to/local/dir:/home/container -e STEAM_USER="YourSteamUser" -e STEAM_PASS="YourSteamPassword" -e STARTUP="updateboth" ghcr.io/franzfischer78/raftmodding-rds:latest`
+{% tab title="With steam to update/download game files" %}
+`docker run -v /path/to/local/dir:/home/container -e STEAM_USER="YourSteamUser" -e STEAM_PASS="YourSteamPassword" -e STEAM_AUTH="EmailSteamCode" -e STARTUP="updateboth" ghcr.io/franzfischer78/raftmodding-rds:latest`
+
+{% hint style="warning" %}
+The Steam auth code is the code you get by e-mail if 2fa is enabled. If you use the mobile app, you can confirm the login through the confirmations page (so you do not need to add the STEAM\_AUTH environment variable to the run command).&#x20;
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
@@ -42,7 +46,7 @@ Set the startup environment variable to whatever fits your needs:\
 \- updateboth: update RDS and Raft
 
 {% hint style="warning" %}
-The STEAM\_USER and STEAM\_PASS variables are only used if you want the software to automatically update the game, therefore you do not need to set these if you don't need to update the game or if you wish to manage that yourself
+The STEAM\_USER, STEAM\_PASS and STEAM\_AUTH variables are only used if you want the software to automatically update the game, therefore you do not need to set these if you don't need to update the game or if you wish to manage that yourself
 {% endhint %}
 
 If you start the Server now you should be greeted with the following:\
